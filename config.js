@@ -22,7 +22,7 @@ config.acceptmaxtrxsize = 51200; // 50K (allowing for numerous inputs, in the ca
 
 //Profile pics stuff
 //You'll probably need to change these directory paths
-config.downloadprofilepics = true; //nb full db rebuild will not download profile pics
+config.downloadprofilepics = false; //nb full db rebuild will not download profile pics
 config.profilepicpath = "../client/img/profilepics/";
 
 //Sometime profile pics have already been removed from imgur
@@ -46,8 +46,8 @@ config.useServerWallets=true;
 
 //BCHD UTXO server
 //BCHD GRPC server can be used to fetch UTXOs, requires BCHD txindex=1 and addrindex=1
-config.bchdgrpcenabled = false;
-//config.bchdhost = '127.0.0.1:8335';
+config.bchdgrpcenabled = true;
+config.bchdhost = 'bchd.greyh.at:8335';
 //config.bchdcertpem = 'rpc.cert';
 //Note, also fill in config.certpem if using a self signed bchd certificate
 //Make sure config.certpem is empty if not using the same certificate
