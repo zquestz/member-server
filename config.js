@@ -42,7 +42,7 @@ config.secondsToWaitBetweenPollingMemPool = 1;
 //UTXO Server stuff
 
 //Use the node's wallet to serve utxos
-config.useServerWallets=true;
+config.useServerWallets=false;
 
 //BCHD UTXO server
 //BCHD GRPC server can be used to fetch UTXOs, requires BCHD txindex=1 and addrindex=1
